@@ -20,7 +20,6 @@ function App() {
             <Route path="/product/:id" element={<ProductDetails />} /> {/* Product Details */}
           </Routes>
         </div>
-        {/* <Catalogue /> */}
         <Footer />
       </div>
     </Router>

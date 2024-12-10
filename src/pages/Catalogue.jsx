@@ -1,6 +1,6 @@
 import React from 'react';
-import { products } from '../data/products'; // Import product data
-import Card from './Card'; // Import the Card component
+import { products } from '../data/products'; 
+import Card from './Card'; 
 
 const Catalogue = () => {
   return (

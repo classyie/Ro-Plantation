@@ -10,14 +10,12 @@ const Navbar = () => {
     <nav className="bg-[#433644] text-white shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold">
               RO Plantation
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link to="/" className="hover:text-gray-300">
               Home
@@ -30,7 +28,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Hamburger Menu Button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -54,7 +51,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-2 space-y-2">
             <Link

@@ -14,7 +14,6 @@ const ContactUs = () => {
   const [productLink, setProductLink] = useState("");
 
   useEffect(() => {
-    // Extract product details only if available in query string
     const title = searchParams.get("title");
     const description = searchParams.get("description");
     const link = searchParams.get("link");
@@ -49,7 +48,6 @@ const ContactUs = () => {
         onSubmit={handleSubmit}
         className="max-w-lg mx-auto bg-gray-50 p-6 rounded-lg shadow-md"
       >
-        {/* Name Field */}
         <div className="mb-4">
           <label className="block text-gray-700">Your Name</label>
           <input
@@ -61,7 +59,6 @@ const ContactUs = () => {
           />
         </div>
 
-        {/* Email Field */}
         <div className="mb-4">
           <label className="block text-gray-700">Email Address</label>
           <input
@@ -73,7 +70,6 @@ const ContactUs = () => {
           />
         </div>
 
-        {/* Phone Number Field */}
         <div className="mb-4">
           <label className="block text-gray-700">Phone Number</label>
           <input
@@ -84,7 +80,6 @@ const ContactUs = () => {
           />
         </div>
 
-        {/* Message Field */}
         <div className="mb-4">
           <label className="block text-gray-700">Your Message</label>
           <textarea
@@ -95,7 +90,6 @@ const ContactUs = () => {
           />
         </div>
 
-        {/* Product of Interest Section - only visible if pre-filled */}
         {productTitle && productDescription && productLink ? (
           <div className="mb-4 bg-gray-100 p-4 rounded-md border">
             <h3 className="text-gray-700 font-semibold mb-2 text-center">
@@ -110,7 +104,6 @@ const ContactUs = () => {
           </div>
         ) : null}
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-200"

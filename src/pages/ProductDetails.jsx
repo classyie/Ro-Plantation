@@ -40,7 +40,6 @@ const ProductDetails = () => {
   return (
     <div className="container mx-auto px-6 py-8 bg-white">
       <div className="flex xl:flex-row md:flex-col sm:flex-col items-center">
-        {/* Product Image */}
         <div className="">
           <img
             src={product.image}
@@ -48,7 +47,6 @@ const ProductDetails = () => {
             className="w-full h-80 object-cover rounded-lg shadow-md"
           />
         </div>
-        {/* Product Details */}
         <div className="mt-4 xl:mt-0 xl:ml-8 md:w-full sm:w-full w-full xl:w-1/2">
           <h2 className="text-3xl font-bold text-[#00796B] mb-4">
             {product.name}

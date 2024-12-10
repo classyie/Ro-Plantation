@@ -13,9 +13,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Links Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center mb-4">
-          {/* Navigation Links */}
           <div>
             <h3 className="font-semibold mb-2">Quick Links</h3>
             <ul className="space-y-2">
@@ -37,18 +35,15 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="font-semibold mb-2">Contact</h3>
             <p>Email: info@roplantation.com</p>
             <p>Phone: +91-123-456-7890</p>
           </div>
 
-          {/* Social Media Links */}
           <div>
             <h3 className="font-semibold mb-2">Follow Us</h3>
             <div className="flex justify-center space-x-4 mt-2">
-              {/* Example Social Media Links */}
               <a
                 href="https://www.facebook.com"
                 target="_blank"
@@ -77,7 +72,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom Section */}
         <div className="text-center text-sm border-t border-gray-300 pt-4 mt-2">
           <p>&copy; {new Date().getFullYear()} RO Plantation | All rights reserved.</p>
         </div>
