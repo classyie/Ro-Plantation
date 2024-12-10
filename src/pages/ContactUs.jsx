@@ -36,7 +36,13 @@ const ContactUs = () => {
       productDescription,
       productLink,
     });
+    setName("");
+    setEmail("");
+    setPhone("");
+
+    setMessage("");
     alert("Your inquiry has been submitted!");
+
   };
 
   return (
